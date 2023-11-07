@@ -30,7 +30,7 @@ public class Main
                 int number = obj.getRandomNumber();
                 for (int i = 0; i < 5; i++)
                 {
-                    System.out.print("Enter the number that you have Guess");
+                    System.out.print("Enter the number that you have Guess ");
                     int inputNumber = sc.nextInt();
                     System.out.println();
                     if (inputNumber == number)
@@ -39,15 +39,62 @@ public class Main
                         ct++;
                         break;
                     } else if (inputNumber >= 41 && inputNumber <= 50) {
-                        System.out.println("Your Guess is Wrong please !!! It is Somewhat between 41 to 50");
+                        if(i==4)
+                        {
+                            System.out.println("Your Guess is Wrong please !!!");
+                            System.out.println("Number is " + number);
+                        }
+                        else
+                        {
+                            System.out.println("Your Guess is Wrong please !!! It is Somewhat between 41 to 50");
+                        }
+
                     } else if (inputNumber >= 31 && inputNumber <= 40) {
-                        System.out.println("Your Guess is Wrong please !!! It is Somewhat between 31 to 40");
-                    } else if (inputNumber >= 21 && inputNumber <= 30) {
-                        System.out.println("Your Guess is Wrong please !!! It is Somewhat between 21 to 30");
-                    } else if (inputNumber >= 11 && inputNumber <= 20) {
-                        System.out.println("Your Guess is Wrong please !!! It is Somewhat between 11 to 20");
-                    } else if (inputNumber >= 1 && inputNumber <= 10) {
-                        System.out.println("Your Guess is Wrong please !!! It is Somewhat between 1 to 10");
+                        if(i==4)
+                        {
+                            System.out.println("Your Guess is Wrong please !!!");
+                            System.out.println("Number is " + number);
+                        }
+                        else
+                        {
+                            System.out.println("Your Guess is Wrong please !!! It is Somewhat between 31 to 40");
+                        }
+                    }
+                    else if (inputNumber >= 21 && inputNumber <= 30)
+                    {
+                        if(i==4)
+                        {
+                            System.out.println("Your Guess is Wrong please !!!");
+                            System.out.println("Number is " + number);
+                        }
+                        else
+                        {
+                            System.out.println("Your Guess is Wrong please !!! It is Somewhat between 21 to 30");
+                        }
+                    }
+                    else if (inputNumber >= 11 && inputNumber <= 20)
+                    {
+                        if(i==4)
+                        {
+                            System.out.println("Your Guess is Wrong please !!!");
+                            System.out.println("Number is " + number);
+                        }
+                        else
+                        {
+                            System.out.println("Your Guess is Wrong please !!! It is Somewhat between 11 to 20");
+                        }
+
+                    } else if (inputNumber >= 1 && inputNumber <= 10)
+                    {
+                        if(i==4)
+                        {
+                            System.out.println("Your Guess is Wrong please !!!");
+                            System.out.println("Number is " + number);
+                        }
+                        else
+                        {
+                            System.out.println("Your Guess is Wrong please !!! It is Somewhat between 1 to 10");
+                        }
                     }
 
                 }
